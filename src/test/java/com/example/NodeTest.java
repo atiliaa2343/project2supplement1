@@ -15,8 +15,6 @@ public class NodeTest {
 	/*** 
 	 * Tests the insert function  
 	 * Verifies that the nodes are correctly inserted 
-	 * 
-	 * 
 	 * /
 	 */
 
@@ -36,11 +34,7 @@ public class NodeTest {
         assertEquals(3, root.left.left.data);
     } 
     
-    /**
-     * Tests the dump functions
-     * 
-     * 
-     * */
+   
 
     @Test
     public void testDumpNode() {
