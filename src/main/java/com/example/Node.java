@@ -1,15 +1,31 @@
 package main.java.com.example;
 
+
+/** 
+ * 
+ * Represents a node in a binary search tree. 
+ * Each node contains an integer identifier, data,and references to its left and right children.
+ * It inserts new values.
+ * 
+ * */
 public class Node {
     public int id;
     public int data;
     public Node left;
-    public Node right;
-
+    public Node right; 
+    
+    /**
+     * Constructs a new Node with the specified id and data.
+     *
+     * @param id   The unique identifier for the node.
+     * @param data The data to store in the node.
+     */
     public Node(int id, int data) {
         this.id = id;
         this.data = data;
-    }
+    } 
+  
+    
 
     public void insert(int value) {
         if (value < this.data) {
@@ -26,6 +42,9 @@ public class Node {
             }
         }
     }
+    
+   
+   
 
     public String dump() {
         StringBuilder sb = new StringBuilder();
