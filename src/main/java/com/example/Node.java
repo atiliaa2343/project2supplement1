@@ -26,6 +26,13 @@ public class Node {
     } 
   
     
+    /**
+     * Inserts a new value into the binary search tree.
+     * If the value is less than the current node's data, it is inserted into the left subtree.
+     * If the value is greater than or equal to the current node's data, it is inserted into the right subtree.
+     *
+     * @param value The value to insert into the tree.
+     */
 
     public void insert(int value) {
         if (value < this.data) {
