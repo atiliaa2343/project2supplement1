@@ -1,10 +1,24 @@
 package test.java.com.example;
 
-import main.java.com.example.Node;
+import main.java.com.example.Node; 
+
+/** 
+ * Unit tests 
+ * These tests validate the different functions. 
+ * 
+ * */
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class NodeTest {
+public class NodeTest { 
+	
+	/*** 
+	 * Tests the insert function  
+	 * Verifies that the nodes are correctly inserted 
+	 * 
+	 * 
+	 * /
+	 */
 
     @Test
     public void testNodeInsertion() {
@@ -20,7 +34,13 @@ public class NodeTest {
         assertEquals(5, root.left.data);
         assertEquals(15, root.right.data);
         assertEquals(3, root.left.left.data);
-    }
+    } 
+    
+    /**
+     * Tests the dump functions
+     * 
+     * 
+     * */
 
     @Test
     public void testDumpNode() {
