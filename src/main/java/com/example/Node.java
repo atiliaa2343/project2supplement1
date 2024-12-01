@@ -50,8 +50,12 @@ public class Node {
         }
     }
     
-   
-   
+    /**
+     * Generates a string representation of the tree starting from this node.
+     * The string is formatted to show the hierarchy of nodes in a human-readable format.
+     *
+     * @return A string representing the structure and data of the tree.
+     */
 
     public String dump() {
         StringBuilder sb = new StringBuilder();
