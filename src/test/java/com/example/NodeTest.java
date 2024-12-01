@@ -34,7 +34,13 @@ public class NodeTest {
         assertEquals(3, root.left.left.data);
     } 
     
-   
+    /*** 
+	 * Tests the dump function  
+	 * Verifies that the nodes are correctly dumped 
+	 * 
+	 * 
+	 * /
+	 */
 
     @Test
     public void testDumpNode() {
