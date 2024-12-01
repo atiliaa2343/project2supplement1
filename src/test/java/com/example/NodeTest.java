@@ -1,18 +1,18 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+package test.java.com.example;
 
-class NodeTest {
+import main.java.com.example.Node;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class NodeTest {
 
     @Test
-    void testNodeInsertion() {
-        Node root = new Node(1, 10); // Root node with ID 1 and data 10
+    public void testNodeInsertion() {
+        Node root = new Node(1, 10);
+        root.insert(5);
+        root.insert(15);
+        root.insert(3);
 
-        // Insert data into the tree
-        root.insert(5);  // Insert into left child
-        root.insert(2); // Insert into right child
-        root.insert(60);  // Insert into left-left grandchild
-
-       
         assertNotNull(root.left);
         assertNotNull(root.right);
         assertNotNull(root.left.left);
@@ -23,7 +23,7 @@ class NodeTest {
     }
 
     @Test
-    void testDumpNode() {
+    public void testDumpNode() {
         Node root = new Node(1, 10);
         root.insert(5);
         root.insert(15);
@@ -36,3 +36,4 @@ class NodeTest {
         assertEquals(expectedDump, root.dump());
     }
 }
+
